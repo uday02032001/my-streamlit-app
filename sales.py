@@ -4,7 +4,7 @@ import plotly.express as px
 
 st.title("Sales Dashboard")
 
-url = "https://drive.google.com/file/d/1Pe-2bCluotRrwVlpsoRNHS_-bfYme5ZF/view?usp=sharing"
+url = "https://drive.google.com/uc?id=1Pe-2bCluotRrwVlpsoRNHS_-bfYme5ZF"
 sales = pd.read_csv(url)
 
 
