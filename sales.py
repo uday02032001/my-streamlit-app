@@ -4,14 +4,9 @@ import plotly.express as px
 
 st.title("Sales Dashboard")
 
-uploaded_file = st.file_uploader("Upload your sales CSV file", type="csv")
+url = "https://drive.google.com/file/d/1Pe-2bCluotRrwVlpsoRNHS_-bfYme5ZF/view?usp=sharing"
+sales = pd.read_csv(url)
 
-if uploaded_file is not None:
-    sales = pd.read_csv(uploaded_file)
-    st.write("### Data Preview", sales.head())
-    # Add more charts/visuals here
-else:
-    st.warning("Please upload a sales.csv file to get started.")
 
 # Set page config
 st.set_page_config(page_title="Sales Dashboard", layout="wide")
