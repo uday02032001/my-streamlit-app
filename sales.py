@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 
-sales = pd.read_csv("C:\\Users\\uk455\\sales_app\\sales.csv")
+sales = pd.read_csv("sales.csv")
 
 # Set page config
 st.set_page_config(page_title="Sales Dashboard", layout="wide")
